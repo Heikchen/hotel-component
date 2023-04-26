@@ -1,9 +1,9 @@
 import React, { createContext } from 'react';
 
-interface ContextProps {
+type ContextProps = {
   selected: string[];
   setSelected: React.Dispatch<React.SetStateAction<string[]>>;
-}
+};
 
 const HotelContext = createContext<ContextProps>({
   selected: [],
